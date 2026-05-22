@@ -3,234 +3,158 @@
 
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
 
-<title>Universities - Univestree</title>
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0" />
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
+  <title>
+    Universities | Univestree
+  </title>
 
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet"
+        href="../css/style.css" />
 
 </head>
 
 <body>
 
-<nav>
+  <!-- Navbar -->
 
-<div class="logo">
-Univestree
-</div>
+  <header class="navbar">
 
-<ul>
+    <div class="logo">
+      Univestree
+    </div>
 
-<li>
-<a href="../index.html">
-Home
-</a>
-</li>
+    <nav>
 
-<li>
-<a href="courses.html">
-Courses
-</a>
-</li>
+      <a href="../index.html">
+        Home
+      </a>
 
-<li>
-<a href="counsellors.html">
-Counsellors
-</a>
-</li>
+      <a href="universities.html">
+        Universities
+      </a>
 
-<li>
-<a href="countries.html">
-Countries
-</a>
-</li>
+      <a href="courses.html">
+        Courses
+      </a>
 
-</ul>
+      <a href="dashboard.html">
+        Dashboard
+      </a>
 
-<div class="nav-buttons">
+    </nav>
 
-<button
-class="btn btn-outline"
-onclick="window.location.href='login.html'">
+  </header>
 
-Sign In
+  <!-- Hero -->
 
-</button>
+  <section class="hero small-hero">
 
-<button
-class="btn btn-primary"
-onclick="window.location.href='signup.html'">
+    <div class="hero-content">
 
-Get Started
+      <h1>
+        Explore Top Universities
+      </h1>
 
-</button>
+      <p>
+        Discover world-class universities and apply globally with Univestree.
+      </p>
 
-</div>
+    </div>
 
-</nav>
+  </section>
 
-<section class="section">
+  <!-- Universities -->
 
-<h1 class="section-title">
-Top Universities
-</h1>
+  <section class="info-section">
 
-<div class="cards">
+    <h2>
+      Featured Universities
+    </h2>
 
-<div class="card">
+    <div class="card-container">
 
-<h3>
-MIT
-</h3>
+      <!-- Harvard -->
 
-<p>
-Cambridge, USA
-</p>
+      <div class="card">
 
-<p>
-World Rank #1
-</p>
+        <h3>
+          Harvard University
+        </h3>
 
-<button
-class="apply-btn"
-onclick="window.location.href='apply.html'">
+        <p>
+          United States
+        </p>
 
-Apply Now
+        <p>
+          QS Ranking: #4
+        </p>
 
-</button>
+        <button
+          onclick="window.location.href='university-details.html'">
 
-</div>
+          View Details
 
-<div class="card">
+        </button>
 
-<h3>
-Oxford University
-</h3>
+      </div>
 
-<p>
-Oxford, UK
-</p>
+      <!-- Oxford -->
 
-<p>
-World Rank #3
-</p>
+      <div class="card">
 
-<button
-class="apply-btn"
-onclick="window.location.href='apply.html'">
+        <h3>
+          Oxford University
+        </h3>
 
-Apply Now
+        <p>
+          United Kingdom
+        </p>
 
-</button>
+        <p>
+          QS Ranking: #3
+        </p>
 
-</div>
+        <button
+          onclick="window.location.href='university-details.html'">
 
-<div class="card">
+          View Details
 
-<h3>
-University of Toronto
-</h3>
+        </button>
 
-<p>
-Toronto, Canada
-</p>
+      </div>
 
-<p>
-Top Canadian University
-</p>
+      <!-- Toronto -->
 
-<button
-class="apply-btn"
-onclick="window.location.href='apply.html'">
+      <div class="card">
 
-Apply Now
+        <h3>
+          University of Toronto
+        </h3>
 
-</button>
+        <p>
+          Canada
+        </p>
 
-</div>
+        <p>
+          QS Ranking: #21
+        </p>
 
-<div class="card">
+        <button
+          onclick="window.location.href='university-details.html'">
 
-<h3>
-University of Melbourne
-</h3>
+          View Details
 
-<p>
-Melbourne, Australia
-</p>
+        </button>
 
-<p>
-Top Australian University
-</p>
+      </div>
 
-<button
-class="apply-btn"
-onclick="window.location.href='apply.html'">
+    </div>
 
-Apply Now
-
-</button>
-
-</div>
-
-<div class="card">
-
-<h3>
-ETH Zurich
-</h3>
-
-<p>
-Zurich, Switzerland
-</p>
-
-<p>
-Engineering Excellence
-</p>
-
-<button
-class="apply-btn"
-onclick="window.location.href='apply.html'">
-
-Apply Now
-
-</button>
-
-</div>
-
-<div class="card">
-
-<h3>
-National University of Singapore
-</h3>
-
-<p>
-Singapore
-</p>
-
-<p>
-Asia's Best University
-</p>
-
-<button
-class="apply-btn"
-onclick="window.location.href='apply.html'">
-
-Apply Now
-
-</button>
-
-</div>
-
-</div>
-
-</section>
-
-<script src="../js/main.js"></script>
+  </section>
 
 </body>
 </html>
