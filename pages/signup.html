@@ -85,6 +85,7 @@ Start your global admission journey
 </p>
 
 <input
+id="signup-name"
 type="text"
 placeholder="Full Name"
 style="
@@ -161,7 +162,37 @@ Login
 
 </section>
 
-<script type="module" src="../js/firebase.js"></script>
+<script>
+async function signupUser() {
+  const name = document.getElementById('signup-name').value;
+  const email = document.getElementById('signup-email').value;
+  const password = document.getElementById('signup-password').value;
+
+  if (!name || !email || !password) {
+    alert('Please fill in all fields');
+    return;
+  }
+
+  try {
+    const res = await fetch('https://univestree-backend.vercel.app/api/auth/signup', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ name, email, password })
+    });
+
+    const data = await res.json();
+
+    if (res.ok) {
+      alert('Account created successfully!');
+      window.location.href = 'login.html';
+    } else {
+      alert('Error: ' + data.error);
+    }
+  } catch (err) {
+    alert('Something went wrong. Try again.');
+  }
+}
+</script>
 
 </body>
 </html>
